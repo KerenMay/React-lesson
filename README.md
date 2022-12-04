@@ -32,10 +32,17 @@ Date 30/11/2022
 
 -Example of using the component with render (??)
 
+### 006_onChange
+
+- show how to use on change with useState to show input value dynamic change
+
 ### H.W
 
 -disable the minus button of the counter when it is 0
 -to do styled ul and li with the children just like the StyledTitle component
+-bonus ex. build an app for multiple search engine
+https://codesandbox.io/s/l2cs1h
+
 
 # Links
 
