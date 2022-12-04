@@ -24,6 +24,14 @@ Date 30/11/2022
 
 -Use useState to save and to show the component state
 
+### 004_conditionalRender
+
+-Shows different methods of conditional rendering
+
+### 005_children
+
+-Example of using the component with render (??)
+
 ### H.W
 
 -disable the minus button of the counter when it is 0
