@@ -27,6 +27,7 @@ Date 30/11/2022
 ### H.W
 
 -disable the minus button of the counter when it is 0
+-to do styled ul and li with the children just like the StyledTitle component
 
 # Links
 
