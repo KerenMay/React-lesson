@@ -1,3 +1,14 @@
+function MailboxGreeting({ user, unreadMessages }) {
+  return (
+    <div>
+      <div>Hello {user}</div>
+      {unreadMessages > 0 && (
+        <div>You have {unreadMessages} unread messages</div>
+      )}
+    </div>
+  );
+}
+
 function UserMessageWithIf({ user }) {
   if (user) {
     return (
@@ -45,6 +56,7 @@ function App() {
       <UserMessage user={null} />
       <UserMessage user={"Keren"} />
       <UserMessageWithIf user={"Elena"} />
+      <MailboxGreeting user="Natan" unreadMessages={99} />
     </div>
   );
 }
