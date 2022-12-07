@@ -4,7 +4,7 @@ function Counter() {
   //Hooks
   //State
 
-  const [counter, setCounter] = useState(0);
+  let [counter, setCounter] = useState(0);
   console.log("counter is rendering");
 
   function increment() {
@@ -19,13 +19,23 @@ function Counter() {
     console.log("decrement", decCounter);
   }
 
-  return (
-    <div>
-      <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
-      <h2>{counter}</h2>
-    </div>
-  );
+  if (counter > 0) {
+    return (
+      <div>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+        <h2>{counter}</h2>
+      </div>
+    );
+  } else if (counter === 0) {
+    return (
+      <div>
+        <button onClick={increment}>+</button>
+        <button disabled={true}>-</button>
+        <h2>{counter} - this is the lowest point</h2>
+      </div>
+    );
+  }
 }
 
 export default Counter;
