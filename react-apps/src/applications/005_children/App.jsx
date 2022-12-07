@@ -13,6 +13,21 @@ function StyleTitle({ children }) {
   );
 }
 
+function StyleUl({ children }) {
+  return (
+    <div
+      style={{
+        background: "pink",
+        color: "hotpink",
+        padding: "5px",
+        fontSize: "20px",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
 function App() {
   return (
     <div>
@@ -20,6 +35,15 @@ function App() {
         <div>Hello</div>
         <p>This is my title</p>
       </StyleTitle>
+      <StyleUl>
+        <ul>
+          <li>K</li>
+          <li>E</li>
+          <li>R</li>
+          <li>E</li>
+          <li>N</li>
+        </ul>
+      </StyleUl>
     </div>
   );
 }
