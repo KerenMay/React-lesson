@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 
 function Header() {
   return (
-    <AppBar>
+    <AppBar position="sticky">
       <Toolbar>
         <Typography
           sx={{ fontFamily: "fantasy", fontWeight: 900, fontSize: 30 }}

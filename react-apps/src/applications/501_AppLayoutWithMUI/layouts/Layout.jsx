@@ -2,10 +2,11 @@ import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import Main from "./main/Main";
 import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
 
 function Layout({ children }) {
   return (
-    <div>
+    <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <CssBaseline />
       <Header />
       <Main>
@@ -13,7 +14,7 @@ function Layout({ children }) {
         {children}
       </Main>
       <Footer />
-    </div>
+    </Box>
   );
 }
 
