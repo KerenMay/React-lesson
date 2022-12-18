@@ -3,14 +3,15 @@ import AboutPage from "../pages/AboutPage";
 // import Layout from "./layouts/Layout";
 // import Button from "@mui/material/Button";
 import HomePage from "../pages/HomePage";
+import routes from "./routes";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: routes.HOMEPAGE,
     element: <HomePage />,
   },
   {
-    path: "/about",
+    path: routes.ABOUT_PAGE,
     element: <AboutPage />,
   },
 ]);
