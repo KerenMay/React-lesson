@@ -72,6 +72,16 @@ function Router() { function PagesView() { return <AboutPage />; } return (
 ); }
 ```
 
+### 501_AppLayoutWithMUI
+
+- Install MUI
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+
+- Add MUI components to the app - such as header&footer
+
 # Links
 
 [Course Repo](https://github.com/bk-software/hu-react-redux)

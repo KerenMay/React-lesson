@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-import { blue } from "@mui/material/colors";
+// import { blue } from "@mui/material/colors";
 
 function Copyright() {
   return (
