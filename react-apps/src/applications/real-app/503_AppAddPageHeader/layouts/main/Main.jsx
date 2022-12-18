@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import PropTypes from "prop-types";
 
 function Main({ children }) {
   return (
@@ -8,5 +9,9 @@ function Main({ children }) {
     </Container>
   );
 }
+
+Main.prototypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Main;
